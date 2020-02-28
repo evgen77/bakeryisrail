@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #53473d;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Прямокутник_1_копія_2" data-name="Прямокутник 1 копія 2" class="cls-1" d="M15,15H25v2H15V15Zm0,3H29v2H15V18Zm0,3h7v2H15V21Z" transform="translate(-15 -15)"/>
+</svg>

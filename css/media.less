@@ -1,0 +1,546 @@
+@import 'variable';
+
+@media(min-width: 320px){
+   
+    .item-4{
+        width: 50%;
+        padding: 0 6px;
+    }
+    .item-p{
+        margin-bottom: 30px;
+    }
+}
+@media(min-width: 768px){
+    .item-4{
+        
+        padding: 0 15px;
+    }
+}
+@media(min-width:1336px){
+    #rev-wrp{
+        right: 20px;
+        
+    }
+    .container{
+        padding: 0 20px;
+    }
+
+    .item-4{
+        width: 25%;
+        padding: 0 15px;
+    }
+
+    .wrap-menu nav ul li a{
+        font-size: 1em;
+    }
+     
+}
+@media(min-width:1910px){
+   
+    .container{
+        padding: 0 50px;
+    }
+    .wrap-menu nav ul li a{
+        font-size: 1.357em;
+    }
+
+    .line-cat .item-cat{
+        height: 400px;
+    }
+}
+
+
+@media(max-width:1830px){
+   
+   #rewiev {
+
+   
+    .item-r{
+        .text-r{
+            font-size: 14px;
+        }
+        .star{
+            margin-bottom: 0;
+            margin-top: 5px;
+        }
+    }
+   
+}
+.wrap-tell p{
+    font-size: 1.2em;
+}
+.wrap-menu #logo p{
+    font-size: 2em;
+}
+    #form-bottom .wrap-input{
+        width: 300px;
+        input{
+            width: 80%;
+        }
+    }
+    .cacs{
+        width:100%;
+        max-width: 500px;
+        right: 158px;
+        display: block;
+        margin: 0 auto;
+    }
+    footer .item-foter ul li a,
+    footer .flex .marg a{
+        font-size: 1em;
+    }
+    
+    .wrap-menu{
+        nav{
+            ul li::after{
+                margin: 0 15px;
+            }
+        }
+    }
+    .item-p{
+        .price{
+            margin: 0;
+        }
+      
+        .name-p{
+            font-size: 1em;
+        }
+        .order-btn{
+            padding: 5px 0;
+        }
+    }
+   
+}
+
+@media(max-width:1280px){
+    .cacs{
+        max-width: 400px;
+    }
+    .wrap-menu nav ul li a{
+        font-size: 1em;
+    }
+    .wrap-menu #logo p{
+        font-size: 2em;
+    }
+    .wrap-tell p{
+        font-size: 1em;
+    }
+    .wrap-tell .mobile i{
+        margin-right: 0;
+    }
+}
+
+@media(max-width: 1200px){
+    //main
+    .main{
+        width: 100%;
+        max-width:  100%;
+        padding-right: 0;
+        margin-left: 0;
+    }
+    //rewiev
+    #rev-wrp{
+        max-width: 100%;
+        width: 100%;
+        padding-left: 0;
+        margin-left: 0;
+
+    }
+    #rewiev{
+        position: initial;
+        right: auto;
+        top: auto;
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+        display: flex;
+        margin: 0;
+        align-items: center;
+        &.fixed{
+            position: inherit;
+        }
+       .item-r{
+           width: 50%;
+           margin-bottom: 0;
+           &:first-child{
+               margin-right: 15px;
+           }
+       }
+     }
+     .wrpa-content{
+        flex-direction: column;
+    }
+    //tell-header
+    .wrap-tell{
+        .tell{
+            display: none;
+        }
+     
+      .pc{
+          display: none;
+      }
+    }
+    .wrap-tell .mobile{
+        display: block;
+        i{
+            font-size: 1.6em;
+        }
+    }
+    .cacs{
+        position: initial;
+    }
+    #form-section{
+        background-position: bottom right;
+    }
+}
+@media(max-width:992px){
+    section.banner{
+        padding:  15px 0;
+    }
+    #form-section .container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+   
+    .item-4{
+        width: 50%;
+        padding: 0 6px;
+    }
+   
+   
+ 
+   .wrap-menu #logo .icon-menu{
+        display: block;
+        margin-right: 32px;
+        cursor: pointer;
+        &.active{
+            background-color: #f7f7f7;
+            color: @green;
+          
+
+        }
+    }
+    .line-cat .item-cat .name-cat{
+        font-size: 23px;
+        padding-left: 23px;
+        padding-bottom: 23px;
+    }
+    .wrap-menu nav{
+        position: absolute;
+        left: -1010%;
+        top: 60px;
+        z-index: 99999;
+        .transition;
+        ul{
+            flex-wrap: wrap;
+            background-color: #f7f7f7;
+            padding-left: 15px;
+
+        
+        }
+        ul li{
+            display: block;
+            width: 100%;
+            height: 34px;
+            border-bottom: 2px solid #f1f1f1;
+            display: flex;
+            align-content: center;
+            &:after{
+                content: none;
+            }
+
+        }
+    }
+    .wrap-menu nav.active{
+        left: 0;
+        width: 100%;
+        .transition;
+      
+    }
+    .wrap-menu{
+        height: 60px;
+        padding: 0 15px;
+    }
+}
+@media(max-width: 880px){
+    footer .flex{
+        flex-wrap: wrap;
+    }
+    #form-bottom{
+        .input-form{
+            flex-wrap: wrap;
+        }
+        .wrap-input{
+            width: 100%;
+            margin: 6px 0;
+            &:first-child{
+                margin-right: 0;
+            }
+            input{
+                font-size: 10px;
+            }
+           
+            
+        }
+        
+
+    }
+    .button-form{
+        #send{
+            font-size: 1em;
+            width: 107px;
+        }
+        p{font-size: 7px;}
+    }
+}
+@media(max-width: 768px){
+    #form-section,
+    #section-catering,
+    #pop-product{
+        padding: 20px 0;
+    }
+    .section-name{
+        font-size: 19px;
+        margin-bottom: 20px;
+    }
+    
+   
+    #form-section .list{
+        width: 52px;
+        top: -32px;
+    }
+}
+@media(max-width: 600px){
+    .line-cat .wra-i{
+        width: 100%;
+        margin-bottom: 18px;
+    }
+    .line-cat .wra-i{
+        max-height: 245px;
+        img{
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .item-cat{
+            height: 100%;
+            .name-cat{
+                display: block;
+               
+                background-color: rgba(44, 122, 29, 0.63);
+                
+            }
+        }
+    }
+    #form-bottom .wrap-input{
+        height: 35px;
+        &:last-child:before,
+        &:first-child:before{
+            font-size: 1.2em;
+        }
+        
+    }
+    footer .flex .marg{
+        min-width: 100%;
+    }
+    #wrap-popup{
+        .popup-body{
+            .popup-form{
+                flex-direction: column;
+                .left, .right{
+                    width: 100%;
+                    padding: 0;
+                    text-align: center;
+                }
+                .left{
+                    border-bottom: 1px solid #ededed;
+                    padding-bottom: 15px;
+                    img{
+                        max-width: 160px;
+                        margin-bottom: 15px;
+                    }
+                }
+                .right{
+                    padding-top: 15px;
+                    form{
+                        width: 100%;
+                        .wrap-input{
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .button-form #send{
+        font-size: 14px;
+    }
+    .wrap-tell .mobile i{
+        font-size: 19px;
+    }
+    .wrap-menu #logo p{
+        font-size: 17px;
+    }
+    footer{
+        .logo-footer{
+            font-size: 25px;
+        }
+        h5{
+            font-size: 15px;
+            margin-top: 30px;
+        }
+         .flex .marg a,
+        .item-footer ul li a{
+            font-size: 11px;
+        }
+        .item-foter,
+        ul{
+            padding-left: 0;
+        }
+       .item-foter .wrap-footer-menu ul:first-child{
+            margin-right: 30px;
+        }
+        i{
+            font-size: 17px;
+        }
+    }
+    .item-p {
+        height: 180px;
+        padding: 12px;
+        margin-bottom: 12px;
+        .image-wrap{
+            max-width: 94px;
+            max-height: 65px;
+
+        }
+        .name-p{
+            font-size: 12px;
+        }
+        .text-p{
+            font-size: 9px;
+        }
+        .price{
+            font-size: 12px;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+        .order-btn{
+            font-size: 8px;
+            width: 60px;
+            padding: 0;
+        }
+    }
+    #banner{
+        height: 306px;
+        position: relative;
+        width: 100%;
+        img{
+            object-fit: cover;
+            object-position: center;
+            
+            width: 100%;
+            height:306px;
+           
+        }
+
+    }
+    #rewiev .item-r
+    {
+        padding: 12px;
+        .text-r{
+            font-size: 9px;
+        }
+   .star i{
+       font-size: 8px;
+   }
+   .star{
+       margin: 0;
+   }
+     .nem{
+        font-size: 12px;
+    }
+}
+}
+@media(max-width:380px){
+    .dis-wrap{
+        position: inherit;
+        margin-right: 15px;
+        i{
+            width: 20px;
+            height: 20px;
+            &:before{
+                font-size: 14px;
+
+            }
+           
+        }
+        span{
+            display: none;
+        }
+    }
+    footer .item-foter ul li a,
+    {
+        font-size: 11px;
+    }
+    footer .flex .marg a{
+        font-size: 14px;
+        
+    }
+    footer{
+        padding-top: 21px;
+        .shor-about{
+            font-size: 10px;
+        }
+    }
+    footer .soc-wrap a i{
+        font-size: 15px;
+    }
+    .button-form #send{
+        font-size: 8px;
+    }
+
+    .item-p{
+        height: 185px;
+        .text-p{
+            font-size: 8px;
+
+        }
+        .name-p{
+            font-size: 10px;
+        }
+    }
+    .item-p .order-btn{
+        font-size: 9px;
+        width: 60px;
+    }
+    #form-bottom{
+        .input-form{
+            flex-wrap: wrap;
+        }
+        .wrap-input{
+            width: 100%;
+            margin: 6px 0;
+            &:first-child{
+                margin-right: 0;
+            }
+            input{
+                font-size: 10px;
+            }
+           
+            
+        }
+        
+
+    }
+    .button-form{
+        #send{
+            font-size: 7px;
+            width: 107px;
+            padding: 13px 0;
+        }
+        p{font-size: 7px;}
+    }
+    .form-d{
+        font-size: 11px;
+    }
+}

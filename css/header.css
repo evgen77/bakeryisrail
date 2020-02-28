@@ -1,0 +1,220 @@
+.flex {
+  display: flex;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+  color: #0099fc;
+}
+.transition {
+  transition: 0.5s ease-in-out;
+}
+a:hover {
+  color: #2c7a1d;
+  transition: 0.5s ease-in-out;
+}
+.box-shadow {
+  -webkit-box-shadow: 2px 13px 10px -6px rgba(0, 1, 1, 0.16);
+  -moz-box-shadow: 2px 13px 10px -6px rgba(0, 1, 1, 0.16);
+  box-shadow: 2px 13px 10px -6px rgba(0, 1, 1, 0.16);
+}
+.btn {
+  background: #004e90;
+  transition: 0.5s ease-in-out;
+  border: none;
+}
+.btn:hover {
+  background: #fd3a3a;
+  color: #fff !important;
+  transition: 0.5s ease-in-out;
+  -webkit-box-shadow: 2px 13px 10px -6px rgba(0, 1, 1, 0.16);
+  -moz-box-shadow: 2px 13px 10px -6px rgba(0, 1, 1, 0.16);
+  box-shadow: 2px 13px 10px -6px rgba(0, 1, 1, 0.16);
+  cursor: pointer;
+}
+.section-name {
+  font-size: 2.375em;
+  font-family: 'Open Sans Bold', sans-serif;
+  color: #2c7a1d;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 40px;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-family: 'Open Sans Regular', sans-serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+#wrap-content {
+  flex: 1 0 auto;
+}
+.wrpa-content {
+  align-items: flex-start;
+  display: flex;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.container {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  padding: 0 15px;
+  max-width: 1903px;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+header.fixed {
+  position: fixed;
+  transition: 0.5s ease-in-out;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: #fff;
+  z-index: 99999;
+  right: 0;
+}
+.wrap-menu {
+  height: 82px;
+  box-shadow: 0px 4px 38.71px 10.29px rgba(0, 0, 0, 0.11);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 26px;
+  padding-bottom: 21px;
+}
+.wrap-menu #logo p {
+  font-size: 2.875em;
+  font-family: 'Open Sans Bold', sans-serif;
+  color: #53473d;
+}
+.wrap-menu #logo {
+  display: flex;
+  align-items: center;
+}
+.wrap-menu #logo .icon-menu {
+  display: none;
+  width: 60px;
+  height: 60px;
+}
+.wrap-menu #logo .icon-menu:before {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: flex-start;
+}
+.wrap-menu nav .close {
+  display: none;
+}
+.wrap-menu nav ul {
+  display: flex;
+}
+.wrap-menu nav ul li a {
+  font-size: 1.375em;
+  color: #000;
+  text-transform: uppercase;
+}
+.wrap-menu nav ul li {
+  display: flex;
+  align-items: center;
+}
+.wrap-menu nav ul li:last-child:after {
+  content: none;
+}
+.wrap-menu nav ul li.active a {
+  font-family: 'Open Sans Extra-Bold', sans-serif;
+}
+.wrap-menu nav ul li::after {
+  margin: 0 40px;
+  content: " ";
+  width: 4px;
+  border-radius: 50%;
+  height: 4px;
+  background: #000;
+  font-size: 2em;
+}
+.wrap-tell {
+  display: flex;
+  align-items: center;
+}
+.wrap-tell i {
+  margin-right: 23px;
+  color: #2c7a1d;
+  font-size: 2em;
+}
+.wrap-tell p,
+.wrap-tell a {
+  font-family: 'Open Sans Extra-Bold', sans-serif;
+  font-size: 1.375em;
+  color: #000;
+}
+.wrap-tell a {
+  display: none;
+}
+.wrap-tell span {
+  font-size: 0.875em;
+  color: #8b817e;
+  text-decoration: underline;
+}
+.dis-wrap {
+  position: fixed;
+  left: -10px;
+  top: 60%;
+  z-index: 99;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+.dis-wrap i {
+  margin: 0;
+  display: flex;
+  background: #2c7a1d;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+  cursor: pointer;
+}
+.dis-wrap i:before {
+  color: #fff;
+}
+.dis-wrap:hover span {
+  left: 68px;
+  transition: 0.5s ease-in-out;
+  z-index: 9;
+}
+.dis-wrap span {
+  position: absolute;
+  left: 0px;
+  z-index: -9;
+  background: #fff;
+  color: #2c7a1d;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+  font-size: 16px;
+  font-family: 'Open Sans Bold', sans-serif;
+  text-transform: uppercase;
+  padding: 5px 8px;
+  border-radius: 15px;
+  border: 1px solid #2c7a1d;
+}

@@ -1,0 +1,64 @@
+@font-B: 'Open Sans Bold', sans-serif;
+@font-H: 'Open Sans Hebret Bold', sans-serif;
+@font-HR: 'Open Sans Hebret Regular', sans-serif;
+@font-EB: 'Open Sans Extra-Bold', sans-serif;
+@blue: #004e90;
+@font-R: 'Open Sans Regular',sans-serif;
+@black: #0000;
+@color-footer: #53473d;
+
+@font-I:  'Roboto Italic',sans-serif;
+@text-color:#151515;
+@image: '../images';
+@text-btn-color: #fff;
+@text-p: 14px;
+//new
+@green: #2c7a1d;
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    .transition;
+    color: #0099fc;    
+;
+    
+}
+.transition{
+    transition: 0.5s ease-in-out;
+}
+a:hover{
+    color: @green;
+    .transition;
+  
+}
+
+.box-shadow{
+    -webkit-box-shadow: 2px 13px 10px -6px rgba(0, 1, 1, 0.16);
+    -moz-box-shadow: 2px 13px 10px -6px rgba(0, 1, 1, 0.16);
+    box-shadow: 2px 13px 10px -6px rgba(0, 1, 1, 0.16);
+}
+.btn{
+    background: @blue;
+    .transition;
+    border: none;
+    &:hover{       
+        background: #fd3a3a;
+        color: #fff!important;
+        .transition;
+        .box-shadow;
+        cursor: pointer;
+    }
+}
+.section-name{
+    font-size: 2.375em;
+    font-family: @font-B;
+    color: @green;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 0;
+
+}
