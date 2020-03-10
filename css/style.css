@@ -820,3 +820,11 @@ footer .copy {
   -webkit-box-align: center;
   align-items: center;
 }
+.value-price #max-price:before {
+  content: " ";
+  width: 18px;
+  height: 1px;
+  background: #000;
+  display: block;
+  margin: 0 8px;
+}
