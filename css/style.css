@@ -797,6 +797,10 @@ footer .copy {
   text-transform: uppercase;
   font-family: 'Open Sans Bold', sans-serif;
 }
+.wrap-filter .cat li a:hover {
+  color: #2c7a1d;
+  transition: 0.5s ease-in-out;
+}
 .wrap-filter .cat li a.active-cat {
   color: #2c7a1d;
 }

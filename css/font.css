@@ -1,9 +1,9 @@
 
 @font-face {
   font-family: 'Open Sans Bold';
-  src: local('Open Sans '), local('OpenSans'), url('../fonts/OpenSans/opensansbold.woff2') format('woff2');
-  
-  font-style: normal;
+  src:  url('../fonts/OpenSans/opensansbold.woff2') format('woff2'),
+  url('../fonts/OpenSans/OpenSans-Bold.ttf') format('ttf');  
+ 
 }
 
 @font-face {

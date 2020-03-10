@@ -43,42 +43,8 @@
         ]
       })
 
-      $(document).on("scroll", onScroll);
 
-      //smoothscroll
-      $('#pagination a[href^="#"]').on('click', function (e) {
-        e.preventDefault();
-        $(document).off("scroll");
-
-        $('a').each(function () {
-          $(this).removeClass('active-page');
-        })
-        $(this).addClass('active-page');
-
-        var target = this.hash,
-          menu = target;
-        $target = $(target);
-        $('html, body').stop().animate({
-          'scrollTop': $target.offset().top + 2
-        }, 700, 'swing', function () {
-          window.location.hash = target;
-          $(document).on("scroll", onScroll);
-        });
-      });
-
-      function onScroll(event) {
-        var scrollPos = $(document).scrollTop();
-        $('#pagination a').each(function () {
-          var currLink = $(this);
-          var refElement = $(currLink.attr("href"));
-          if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('#pagination a').removeClass("active-page");
-            currLink.addClass("active-page");
-          } else {
-            currLink.removeClass("active-page");
-          }
-        });
-      }
+  
 
 
 
@@ -106,7 +72,7 @@
 
 
 
-      // Show form order a doctor   
+      // Show form order  
       $('.get_popup').click(function () {
         var item = $(this).parent().parent('.item-p');
         var image = item.find('img').attr('src');
@@ -131,20 +97,24 @@
         $('.wrap-filter').slideToggle();
       });
 
-      $("#filterbyprice").ionRangeSlider();
+//filter price
+      $("#filterbyprice").ionRangeSlider({
+        type: "double",
+        onChange: function(data){
+          var toPrice = document.querySelector('.irs-to');
+          var fromPrice = document.querySelector('.irs-from');
+         var  from = fromPrice.innerHTML;
+         var to = toPrice.innerHTML;
+          let min = document.getElementById('min-price');
+          let max = document.getElementById('max-price');           
+    
+         
+          min.innerHTML = from;
+          max.innerHTML = to;
+    
+        }
+      });
 
     });
 
-    function filter() {
-      var price = document.getElementById('filterbyprice').value;
-      let min = document.getElementById('min-price');
-      let item = document.getElementsByClassName('item-3');
-
-
-
-      min.innerHTML = price;
-
-
-
-
-    }
+    
